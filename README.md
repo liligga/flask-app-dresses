@@ -15,7 +15,7 @@
 Для этого в терминале надо выполнить набор команд:
 
 ```bash
-python3 -m venv .venv
+py -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
 ```
@@ -45,4 +45,5 @@ py main.py
 ```
 Эта часть всех шаблонов встраивается в `base.html`
 Все ссылки сделаны в виде `<a href="{{ url_for('<имя_маршрута>') }}">` чтобы страницы открывались во Flask приложении
-
+Ссылки на файлы стилей и картинок тоже приведены к виду `<img src="{{ url_for('static', filename='<имя_файла>') }}">`
+и `<link rel="stylesheet" href="{{ url_for('static', filename='<имя_файла>') }}">`
