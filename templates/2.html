@@ -1,0 +1,267 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>вечерние платья-каталог</title>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href={{ url_for('static', filename="2.css") }}>
+{% endblock %}
+
+{% block content %}
+<span class="dropdown-word">Вечерние платья</span>
+<div class="catalog">
+  <div class="item">
+    <a href="{{ url_for('product_page', product_id='14')}}">
+      <img src="{{ url_for('static', filename="images/30.jpg") }}" alt="Платье 1">
+      <div class="info">
+        <h3>Красное вечернее платье миди</h3>
+        <p>Цена: 11 000 сом</p>
+  </div>
+  </a>
+</div>
+<div class="item">
+  <a href="{{ url_for('product_page', product_id='15')}}">
+    <img src="{{ url_for('static', filename="images/31.jpg") }}" alt="Платье 2">
+    <div class="info">
+      <h3>Платье цвета электрик </h3>
+  <p>Цена: 10 000 сом</p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="{{ url_for('product_page', product_id='16')}}">
+    <img src="{{ url_for('static', filename="images/32.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3>Короткое платье со шлейфом</h3>
+      <p>Цена: 15 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="{{ url_for('product_page', product_id='17')}}">
+    <img src="{{ url_for('static', filename="images/33.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3>Красное шелковое платье на бретельках </h3>
+  <p>Цена: 9 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/34.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3>Пудровое вечернее платье</h3>
+  <p>Цена: 16 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/35.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3>Вечернее черно-белое платье в пол </h3>
+  <p>Цена: 6 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/36.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3>Чёрное платье в пол с разрезом </h3>
+  <p>Цена: 9 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/38.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3>Cинее вечернее платье миди </h3>
+  <p>Цена: 10 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/37.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3>Вечернее платье со съёмными рукавами </h3>
+  <p>Цена: 17 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/39.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3>Вечернее платье цвета тиффани миди </h3>
+  <p>Цена: 30 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/40.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3>Вечернее платье цвета пудра</h3>
+  <p>Цена: 24 700 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/41.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3>Красное вечернее платье миди из фатина </h3>
+  <p>Цена: 13 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/42.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3>Платье винного цвета</h3>
+  <p>Цена: 30 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/43.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3>Нежно розовое атласное платье </h3>
+  <p>Цена: 15 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/44.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3>Длинное платье халат</h3>
+  <p>Цена: 20 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/45.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3>Чрный брючной комбинезон</h3>
+  <p>Цена: 10 500 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/46.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3>Чёрное платье со шлейфом</h3>
+  <p>Цена: 31 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/47.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3>Многоярусное вечернее платье миди </h3>
+  <p>Цена: 37 000 сом </p>
+</div>
+</a>
+</div>
+
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/48.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3>Красное платье миди из фатина </h3>
+  <p>Цена: 25 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/57.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3>Вечернее платье в пол цвета электрик </h3>
+  <p>Цена: 20 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/49.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> Чёрное платье в пол с декольте</h3>
+  <p>Цена: 41 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/51.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> Чёрное вечернее платье с декольте</h3>
+  <p>Цена: 22 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/52.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3>Длинное платье с разрезом</h3>
+  <p>Цена: 40 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/53.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3>Чёрный вечерний комбинезон </h3>
+  <p>Цена: 24 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/54.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> Пудровое вечернее платье-баллон </h3>
+  <p>Цена: 19 750 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/55.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> Короткое вечернее платье в цвете фуксия </h3>
+  <p>Цена: 31 500 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/56.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3>Пудровое платье с объёмными рукавами</h3>
+  <p>Цена: 15 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/50.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3>Короткое платье с объёмными рукавами</h3>
+  <p>Цена: 9 000 сом </p>
+</div>
+</a>
+</div>
+{% endblock %}

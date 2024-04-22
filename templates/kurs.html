@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>INFINITY-свадебный салон </title>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href={{ url_for("static", filename="kurs.css" ) }}>
+{% endblock %}
+
+{% block content %}
+<img src="photo.jpg.jpg">
+<div class="text-container">
+  <span class="big-bold">Свадебный онлайн магазин</span><br>
+  <span class="small-regular">Всё для идеального образа невесты в одном месте</span>
+</div>
+<div class="container1">
+  <img src="1.jpg" alt="nev" style="width: 600px; height: 800px;">
+  <div class="text-box" style="margin-left:50px;">
+    <p class="text1">
+    <p style="text-align: center; font-size:20px; font-weight:500">СВАДЕБНЫЙ САЛОН INFINITY В Бишкеке</p>
+    <p>Свадебный салон INFINITY предлагает своим невестам свадебные платья от лучших брендов Испании, России, Италии и
+      США!</p>
+    <p>В магазине для Вас работают ведущие стилисты-консультанты, которые подберут для Вас платье Вашей мечты, а так
+      же все необходимые аксессуары! У нас 8 светлых больших примерочных, удаленных друг от друга, чтобы Ваш выбор был
+      еще более комфортным! Нас легко найти. Наш свадебный салон находится в центре Бишкека.</p>
+    <p>Для бронирования примерочной с личным стилистом, в удобное для Вас время, рекомендуем записаться онлайн или по
+      телефону. Ждём Вас в нашем салоне!</p>
+  </div>
+</div>
+<div class="navbar-men">
+  <ul>
+    <li><a href="#">Пышные платья +</a></li>
+    <li><a href="#">Атласные +</a></li>
+    <li><a href="#">Блестящие +</a></li>
+    <li><a href="#">Миди +</a></li>
+    <li><a href="#">Открытые +</a></li>
+    <li><a href="#">Минимализм +</a></li>
+  </ul>
+</div>
+<div class="image-container">
+  <div class="image">
+    <img
+      src="https://awsalon.ru/uploads/_thumbs/brides/svadeb_platjya/Rara_Avis/Ricciarelli/227477cf419bb33f2ebfddf27178b8bf/Ricciarelli-00_d_381_581.jpg"
+      alt="Изображение 1">
+    <div class="caption"> <a href="#"> Свадебное платье Rara Avis</a> </div>
+  </div>
+  <div class="image">
+    <img
+      src="https://awsalon.ru/uploads/_thumbs/brides/svadeb_platjya/Blammo_Biamo/Vilda/432a66de044527eb69becabbd69b4275/Vilda-01_d_381_581.jpg"
+      alt="Изображение 2">
+    <div class="caption"><a href="#"> Свадебное платье Blammo Biamo </a></div>
+  </div>
+  <div class="image">
+    <img
+      src="https://awsalon.ru/uploads/_thumbs/brides/svadeb_platjya/Blammo_Biamo/Vetta/6f6ce50c5c9663f4633c592bc366be38/Vetta-01_d_381_581.jpg"
+      alt="Изображение 3">
+    <div class="caption"><a href="#"></a> Свадебное платье Ange Etoiles </a> </div>
+  </div>
+</div>
+
+<div class="slider-container">
+  <div class="slides">
+    <div class="slide"><img
+        src="https://idei.club/uploads/posts/2022-10/1667245755_54-idei-club-p-dizain-svadebnogo-salona-pinterest-57.jpg"
+        alt="Slide 1"></div>
+    <div class="slide"><img src="https://i.pinimg.com/originals/35/24/d4/3524d4f72b0f1b282638e03179328b5c.jpg"
+        alt="Slide 2"></div>
+    <div class="slide"><img src="https://nevestam.by/files/november/14/wedding-broker-prueba-vestido.jpg" alt="Slide 3">
+    </div>
+    <div class="slide"><img src="https://darfix.ru/wp-content/uploads/7/d/3/7d30a6ee6a418cd3c96e875727c8abf8.jpeg"
+        alt="Slide 4"></div>
+  </div>
+  <button class="prev" onclick="prevSlide()"><<<</button>
+  <button class="next" onclick="nextSlide()">>>></button>
+</div>
+<div class="button-container">
+  <a href="{{ url_for('get_form') }}" class="appointment-button">Записаться на примерку</a>
+</div>
+{% endblock %}

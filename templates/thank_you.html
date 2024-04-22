@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>Спасибо за заявку</title>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href={{ url_for("static", filename="kurs.css" ) }}>
+{% endblock %}
+
+{% block content %}
+<div class="thank-you">
+  <h1>Спасибо за заявку</h1>
+  <p>Ваша заявка принята, мы обязательно с вами свяжемся</p>
+</div>
+{% endblock %}

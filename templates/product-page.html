@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  {% block title %}
+  <title>Свадебное платье</title>
+  {% endblock %}
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500&family=Dancing+Script:wght@400..700&family=Lora&family=Montserrat:wght@200&family=Noto+Serif+JP&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500&family=Dancing+Script:wght@400..700&family=Lora&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+JP&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400..700&family=Lora&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+JP&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400..700&family=Lora&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+JP&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Serif+JP&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <style>
+    header {
+      top: 0;
+      left: 0;
+      background-color: #fff;
+      z-index: 1000;
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .navbar-brand {
+      font-weight: 29px;
+      font-size: 60px;
+      text-decoration: none;
+      color: black;
+      font-family: 'Dancing Script', cursive;
+      padding-left: 200px;
+    }
+
+    .navbar {
+      width: 100%;
+      height: 100px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+    }
+
+    .navbar .container {
+      height: inherit;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-menu {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+      padding-right: 20px;
+    }
+
+    .navbar-menu li {
+      display: inline-block;
+    }
+
+    .navbar-menu li a {
+      display: inline-block;
+      color: black;
+      text-decoration: none;
+      background-color: #edccca;
+      border-radius: 10px;
+      padding: 10px;
+      margin-left: 25px;
+      color: black;
+      font-family: "Spectral", serif;
+      font-size: 17px;
+    }
+
+    .navbar-menu li a:hover {
+      opacity: 0.5;
+    }
+
+    .slider-container {
+      margin-top: 20px;
+      /* Устанавливаем отступ сверху */
+      width: 500px;
+      height: 700px;
+      overflow: hidden;
+      position: relative;
+      margin: 0 auto;
+      margin-top: 70px;
+      margin-left: 30px;
+      float: left;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .slide {
+      flex: 0 0 100%;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    button {
+      opacity: none;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 20px 40px;
+      border: none;
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+      z-index: 1;
+      font-size: 24px;
+    }
+
+    .arrow {
+      padding: 6px 20px;
+      background-color: #fff;
+      border: 2px solid #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      font-size: 30px;
+      color: black;
+      /* Цвет стрелки */
+      z-index: 1;
+      /* Чтобы стрелки были поверх слайдов */
+      opacity: 1;
+    }
+
+    .prev {
+      left: 10px;
+      /* Положение левой стрелки */
+    }
+
+    .next {
+      right: 10px;
+      /* Положение правой стрелки */
+    }
+
+    .arrow:hover {
+      background-color: #DCDCDC;
+      /* Измененный цвет фона при наведении */
+      color: #fff;
+      /* Измененный цвет текста при наведении */
+      cursor: pointer;
+      /* Изменение формы курсора */
+    }
+
+    .container12 p {
+      margin: 0;
+      /* Убираем внешние отступы у абзацев */
+    }
+
+    .text-container {
+      /* Новый стиль для блока с текстом */
+      float: left;
+      margin-left: 20px;
+      /* Отступ слева для разделения от слайдера */
+      width: calc(100% - 550px);
+      /* Ширина, оставшаяся после учета слайдера */
+      margin-top: 70px;
+    }
+
+    .text-container p {
+      line-height: 20px;
+      /* Задаем высоту линии 4 пикселя */
+    }
+
+    .button-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .appointment-button {
+      text-align: center;
+      display: inline-block;
+      width: 200px;
+      height: 40px;
+      background-color: #edccca;
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .appointment-button:hover {
+      background-color: beige;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <a href="{{ url_for('index_page') }}" class="navbar-brand">Infinity</a>
+        <div class="navbar-wrap">
+          <ul class="navbar-menu">
+            <li><a href="{{ url_for('wedding_page') }}">Свадебные платья</a>
+            <li><a href="{{ url_for('evening_page') }}">Вечерние платья</a></li>
+            <li><a href="{{ url_for('fata_page') }}">Фата </a></li>
+            <li><a href="{{ url_for('accessories_page') }}">Аксессуары</a></li>
+            <li><a href="{{ url_for('contacts_page') }}">Контакты </a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="slider-container">
+    <div class="slides">
+      {% for image in product['images'] %}
+        <div class="slide"><img src="{{ url_for('static', filename='images/'+image) }}" alt="Slide {{ loop.index }}"></div>
+      {% endfor %}
+    </div>
+    <button class="arrow prev" onclick="prevSlide()">&#8249;</button>
+    <button class="arrow next" onclick="nextSlide()">&#8250;</button>
+  </div>
+
+  <div class="text-container"> <!-- Блок с текстом -->
+    <p style="font-weight: 400; font-size:25px;  font-family: 'Raleway', sans-serif;"> {{ product['title'] }} </p>
+      {% if product['colors'] %}
+    <p style="font-weight: normal; font-size:17px; font-family: 'Raleway', sans-serif;">ВОЗМОЖНЫЕ ЦВЕТА: </p>
+    <p style="font-weight: 500; font-size:15px;font-family: 'Raleway', sans-serif;"> {{ ','.join(product['colors']) }}
+    </p>
+      {% endif %}
+      {% if product['price'] %}
+    <p style="font-weight: 300; font-size:20px; font-family: 'Raleway', sans-serif;">Цена: {{
+      product['price'].replace('_', ' ') }} сом </p>
+      {% endif %}
+      {% if product['description'] %}
+    <p style="font-weight: normal; font-size:25px;font-family: 'Raleway', sans-serif;">Описание: </p>
+    <p style="font-weight: 250; font-size:20px; font-family: 'Raleway', sans-serif;">{{ product['description'] }}</p>
+      {% endif %}
+      {% if product['sku'] %}
+    <p style="font-weight: 200; font-size:15px;font-family: 'Raleway', sans-serif;">АРТИКУЛ: {{ product['sku'] }} </p>
+      {% endif %}
+    <p style="font-weight: 300; font-size:25px;font-family: 'Raleway', sans-serif;">Будем ждать Вас в нашем салоне! </p>
+  </div>
+  <div class="button-container">
+    <a href="#" class="appointment-button">Записаться на примерку</a>
+  </div>
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const slideContainer = document.querySelector('.slides');
+    const slideCount = slides.length;
+    const intervalTime = 2500;
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slideCount;
+      updateSlide();
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slideCount) % slideCount;
+      updateSlide();
+    }
+
+    function updateSlide() {
+      slideContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+  </script>
+</body>
+
+</html>

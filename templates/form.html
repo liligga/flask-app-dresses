@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>Записаться на примерку</title>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href={{ url_for("static", filename="kurs.css" ) }}>
+{% endblock %}
+
+{% block content %}
+
+<div class="appointment-form-container">
+  <h1>Записаться на примерку</h1>
+  <form action="{{ url_for('get_form') }}" method="POST">
+    {{ form.csrf_token }}
+    <label for="name">ФИО: </label>
+    {{ form.name }}
+    <label for="email">Ваш e-mail: </label>
+    {{ form.email }}
+    <label for="phone">Ваш номер телефона: </label>
+    {{ form.phone }}
+    <div>
+      <button id="appointment-button" type="submit">Записаться</button>
+    </div>
+  </form>
+</div>
+{% endblock %}

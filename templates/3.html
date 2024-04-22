@@ -1,0 +1,267 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>Свадебная фата-каталог</title>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href={{ url_for('static', filename="3.css" ) }}>
+{% endblock %}
+
+{% block content %}
+<span class="dropdown-word">Свадебная фата </span>
+<div class="catalog">
+  <div class="item">
+    <a href="{{ url_for('product_page', product_id='18')}}">
+      <img src="{{ url_for('static', filename="images/58.jpg") }}" alt="Платье 1">
+      <div class="info">
+        <h3>Свадебная фата с перекидом на лицо</h3>
+        <p>Цена: 10 000 сом</p>
+      </div>
+    </a>
+  </div>
+  <div class="item">
+    <a href="{{ url_for('product_page', product_id='19')}}">
+      <img src="{{ url_for('static', filename="images/59.jpg") }}" alt="Платье 2">
+      <div class="info">
+        <h3>Двойная фата с хрустальной окантовкой</h3>
+    <p>Цена: 15 000 сом</p>
+  </div>
+  </a>
+</div>
+<div class="item">
+  <a href="{{ url_for('product_page', product_id='20')}}">
+    <img src="{{ url_for('static', filename="images/60.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3>Свадебная фата с красивым кружевом</h3>
+  <p>Цена: 26 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="{{ url_for('product_page', product_id='21')}}">
+    <img src="{{ url_for('static', filename="images/61.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3>Свадебная фата BUTTERFLY с цветами</h3>
+  <p>Цена: 9 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/62.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#">Трёхметровая кружевная фата </a></h3>
+  <p>Цена: 25 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/63.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#">Длинная фата с 3D цветами </a></h3>
+  <p>Цена: 19 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/64.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#">Фата с расшитым кружевом на голове </a></h3>
+  <p>Цена: 26 500 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/65.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#">Длинная кружевна фата испанка </a></h3>
+  <p>Цена: 28 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/66.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#">Кружевная фата средней длины </a></h3>
+  <p>Цена: 22 700 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/67.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#">Нежная свадебная фата </a></h3>
+  <p>Цена: 21 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/68.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#">Двухъярусная фата с кружевом</a></h3>
+  <p>Цена: 15 700 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/69.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#">Двухъярусная фата с узким кружевом </a></h3>
+  <p>Цена: 23 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/70.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#">Роскошная фата расшитая кристаллами</a></h3>
+  <p>Цена: 21 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/71.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#">Свадебная фата с жемчужинами </a></h3>
+  <p>Цена: 19 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/72.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#">Двухъярусная кружевная фата</a></h3>
+  <p>Цена: 25 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/73.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#">Двухъярусная сверкающая фата</a></h3>
+  <p>Цена: 21 500 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/74.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#">Фата с узким кружевом по краю</a></h3>
+  <p>Цена: 24 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/75.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#">Свадебная фата МАНТИЛЬЯ </a></h3>
+  <p>Цена: 17 000 сом </p>
+</div>
+</a>
+</div>
+
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/76.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#">Испанская фата МАНТИЛЬЯ </a></h3>
+  <p>Цена: 22 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/77.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#">Струящаяся фата ИСПАНКА </a></h3>
+  <p>Цена: 20 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/78.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#"> Свадебная фата с нежным кружевом </a></h3>
+  <p>Цена: 11 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/79.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#"> Нежная свадебная фата с кружевом в пол</a></h3>
+  <p>Цена: 26 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/80.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#">Длинная фата испанка с кружевом у лица </a></h3>
+  <p>Цена: 20 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/81.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#">Короткая пышная фата </a></h3>
+  <p>Цена: 9 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/82.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#">Фата с кружевом в виде веточек </a></h3>
+  <p>Цена: 19 750 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/83.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#">Роскошная сверкающая фата</a></h3>
+  <p>Цена: 19 500 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/84.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#">сверкающая свадебная фата </a></h3>
+  <p>Цена: 10 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for('static', filename="images/85.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#">Фата с пайетками на голове </a></h3>
+      <p>Цена: 19 000 сом </p>
+    </div>
+  </a>
+</div>
+{% endblock %}

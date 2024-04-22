@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>Контакты салона</title>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href={{ url_for("static", filename="5.css" ) }}>
+{% endblock %}
+
+{% block content %}
+<span class="dropdown-word">Контакты свадебного салона INFINITY </span>
+<div class="container12">
+  <img src="{{ url_for('static', filename="images/134.jpg") }}">
+  <div>
+    <p style="font-weight: 600; font-size:30px;font-family: 'Cormorant Garamond', serif;">Адрес салона </p>
+    <p style="font-weight: lighter; font-size:20px; font-family: 'Cormorant Garamond', serif;">город Бишкек,ул.Ибраимова
+      125 </p>
+    <p style="font-weight: 600; font-size:30px;font-family: 'Cormorant Garamond', serif;">Часы работы салона </p>
+    <p style="font-weight: lighter; font-size:20px; font-family: 'Cormorant Garamond', serif;">Ежедневно с 10:00 до
+      18:00 </p>
+    <p style="font-weight: 600; font-size:30px;font-family: 'Cormorant Garamond', serif;">Записаться можно по телефону:
+    </p>
+    <p style="font-weight: lighter; font-size:20px; font-family: 'Cormorant Garamond', serif;">+996 703 455 529 </p>
+    <p style="font-weight: 600; font-size:30px;font-family: 'Cormorant Garamond', serif;">Будем ждать Вас в нашем
+      салоне! </p>
+  </div>
+</div>
+{% endblock %}

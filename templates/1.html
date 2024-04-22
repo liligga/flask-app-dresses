@@ -1,0 +1,319 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>Свадебные платья-каталог</title>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href={{ url_for("static", filename="1.css" ) }}>
+{% endblock %}
+
+{% block content %}
+<div class="dropdown" onmouseover="showMenu()">
+  <span class="dropdown-word">Свадебные платья</span>
+  <span class="arrow"></span>
+  <div id="dropdownMenu" class="dropdown-content">
+    <a href="#" style="font-size:20px;font-weight:bold;">Материал</a>
+    <a href="#">Кружевное</a>
+    <a href="#">Атлас</a>
+    <a href="#">Блестящие</a>
+    <a href="#">Фатин</a>
+    <a href="#" style="font-size:20px;font-weight:bold;">Силуэт</a>
+    <a href="#">Пышное</a>
+    <a href="#">Прямые</a>
+    <a href="#">А-силуэт</a>
+    <a href="#">Русалка</a>
+    <a href="#" style="font-size:20px;font-weight:bold;">Особенности</a>
+    <a href="#"> С рукавами</a>
+    <a href="#">С разрезом </a>
+    <a href="#">Со шлейфом</a>
+    <a href="#">С декольте</a>
+    <a href="#" style="font-size:20px;font-weight:bold;">Стиль </a>
+    <a href="#"> Минимализм</a>
+    <a href="#"> Бохо</a>
+    <a href="#">Греческие </a>
+    <a href="#"> Классические</a>
+    <a href="#" style="font-size:20px;font-weight:bold;"> Цвет</a>
+    <a href="#"> Айвори</a>
+    <a href="#">Бежевый</a>
+    <a href="#">Белый</a>
+    <a href="#">Пыльная роза </a>
+    <a href="#" style="font-size:20px;font-weight:bold;">Цена</a>
+    <a href="#">от 25000сом>></a>
+    <a href="#">от 60000сом>></a>
+    <a href="#">от 150000сом>></a>
+    <a href="#">от 200000сом>></a>
+    <!-- Сюда будут добавляться ссылки при использовании JavaScript -->
+  </div>
+</div>
+
+<script>
+  function showMenu() {
+    var menu = document.getElementById("dropdownMenu");
+    if (menu.innerHTML === "") {
+      for (var i = 1; i <= 20; i++) { // Измените число на количество желаемых ссылок
+        var link = document.createElement("a");
+        link.href = "#";
+        link.textContent = "Ссылка " + i;
+        menu.appendChild(link);
+      }
+    }
+  }
+</script>
+<div class="catalog">
+  <div class="item">
+  <a href="{{ url_for('product_page', product_id='6')}}" >
+      <img src="{{ url_for("static", filename="images/2.jpg") }}" alt="Платье 1">
+      <div class="info">
+        <h3>Свадебное платье рыбка со съёмным болеро</h3>
+        <p>Цена: 120 000 сом</p>
+      </div>
+    </a>
+  </div>
+
+  <div class="item">
+    <a href="{{ url_for('product_page', product_id='7')}}">
+      <img src="{{ url_for("static", filename="images/3.jpg") }}" alt="Платье 2">
+      <div class="info">
+        <h3>Свадебное платье русалка расшитое бисером</h3>
+        <p>Цена: 147 000 сом</p>
+      </div>
+    </a>
+  </div>
+  <div class="item">
+  <a href="{{ url_for('product_page', product_id='8')}}">
+      <img src="{{ url_for("static", filename="images/5.jpg") }}" alt="Платье 3">
+      <div class="info">
+        <h3>Роскошное свадебное кружевное платье со шлейфом</h3>
+        <p>Цена: 128 000 сом </p>
+      </div>
+    </a>
+  </div>
+  <div class="item">
+  <a href="{{ url_for('product_page', product_id='9')}}">
+      <img src="{{ url_for("static", filename="images/4.jpg") }}" alt="Платье 3">
+      <div class="info">
+        <h3>Роскошное сияющее свадебное платье с открытой спиной</h3>
+        <p>Цена: 128 000 сом </p>
+      </div>
+    </a>
+  </div>
+  <div class="item">
+  <a href="{{ url_for('product_page', product_id='10')}}">
+      <img src="{{ url_for("static", filename="images/6.jpg") }}" alt="Платье 3">
+      <div class="info">
+        <h3>Роскошное свадебное платье c перьями и вырезом</h3>
+        <p>Цена: 90 000 сом </p>
+      </div>
+    </a>
+  </div>
+  <div class="item">
+  <a href="{{ url_for('product_page', product_id='11')}}">
+      <img src="{{ url_for("static", filename="images/9.jpg") }}" alt="Платье 3">
+      <div class="info">
+        <h3>Роскошная кружевная русалка с открытой спиной</h3>
+        <p>Цена: 115 000 сом </p>
+      </div>
+    </a>
+  </div>
+  <div class="item">
+  <a href="{{ url_for('product_page', product_id='12')}}">
+      <img src="{{ url_for("static", filename="images/8.jpg") }}" alt="Платье 3">
+      <div class="info">
+        <h3>Роскошная русалка,расшитая бисером и жемчужинами</h3>
+        <p>Цена: 117 000 сом </p>
+      </div>
+    </a>
+  </div>
+  <div class="item">
+  <a href="{{ url_for('product_page', product_id='13')}}">
+      <img src="{{ url_for("static", filename="images/10.jpg") }}" alt="Платье 3">
+      <div class="info">
+        <h3>Cвадебное платье c красивым расшитом корсетом и атласной юбкой</h3>
+        <p>Цена: 80 000 сом </p>
+      </div>
+    </a>
+  </div>
+  <div class="item">
+    <a href="#">
+      <img src="{{ url_for("static", filename="images/7.jpg") }}" alt="Платье 3">
+      <div class="info">
+        <h3> <a href="#">Свадебное платье рыбка в светоотражающем кружеве </a></h3>
+        <p>Цена: 100 000 сом </p>
+      </div>
+    </a>
+  </div>
+  <div class="item">
+    <a href="#">
+      <img src="{{ url_for("static", filename="images/11.jpg") }}" alt="Платье 3">
+      <div class="info">
+        <h3> <a href="#">Белое кружевное свадебное платье-рыбка с открытой спиной</a></h3>
+        <p>Цена: 60 000 сом </p>
+      </div>
+    </a>
+  </div>
+  <div class="item">
+    <a href="#">
+      <img src="{{ url_for("static", filename="images/13.jpg") }}" alt="Платье 3">
+      <div class="info">
+        <h3> <a href="#">Сверкающее свадебное платье на тонких бретельках</a></h3>
+        <p>Цена: 66 700 сом </p>
+      </div>
+    </a>
+  </div>
+  <div class="item">
+    <a href="#">
+      <img src="{{ url_for("static", filename="images/14.jpg") }}" alt="Платье 3">
+      <div class="info">
+        <h3> <a href="#">Раскошное свадебное платье прямого кроя без бретелек</a></h3>
+        <p>Цена: 65 000 сом </p>
+      </div>
+    </a>
+  </div>
+  <div class="item">
+    <a href="#">
+      <img src="{{ url_for("static", filename="images/15.jpg") }}" alt="Платье 3">
+      <div class="info">
+        <h3> <a href="#">Лаконичная русалка с роскошным шлейфом</a></h3>
+        <p>Цена: 100 000 сом </p>
+      </div>
+    </a>
+  </div>
+  <div class="item">
+    <a href="#">
+      <img src="{{ url_for("static", filename="images/12.jpg") }}" alt="Платье 3">
+      <div class="info">
+        <h3> <a href="#">Роскошное свадебное платье c объёмным кружевом</a></h3>
+        <p>Цена: 137 000 сом </p>
+      </div>
+    </a>
+  </div>
+  <div class="item">
+    <a href="#">
+      <img src="{{ url_for("static", filename="images/16.jpg") }}" alt="Платье 3">
+      <div class="info">
+        <h3> <a href="#">Свадебное платьетрансфор расшитое бисером и жемчугом</a></h3>
+        <p>Цена: 140 000 сом </p>
+      </div>
+    </a>
+  </div>
+  <div class="item">
+    <a href="#">
+      <img src="{{ url_for("static", filename="images/17.jpg") }}" alt="Платье 3">
+      <div class="info">
+        <h3> <a href="#">Стильное облегающее свадебное платье с рукавами</a></h3>
+    <p>Цена: 50 000 сом </p>
+  </div>
+  </a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for("static", filename="images/18.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#">Атласное свадебное платье с жемчужными бретельками</a></h3>
+  <p>Цена: 70 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for("static", filename="images/19.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#">Свадебное платья со сборкой и разрезом на юбке</a></h3>
+  <p>Цена: 52 000 сом </p>
+</div>
+</a>
+</div>
+
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for("static", filename="images/22.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#">Пышное атласное свадебное платье с объёмными цветамина плечах</a></h3>
+  <p>Цена: 60 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for("static", filename="images/23.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#"> Атласное свадебное платье с рукавами и объёмными цветами</a></h3>
+  <p>Цена: 54 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for("static", filename="images/21.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#"> Кружевное свадебное платье с объёмными цветами</a></h3>
+  <p>Цена: 72 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for("static", filename="images/20.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#"> Свадебное платье принцесса с жемчужным корсетом</a></h3>
+  <p>Цена: 90 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for("static", filename="images/24.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#"> Белое свадебное платье-трансформер с открытыми плечами</a></h3>
+  <p>Цена: 18 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for("static", filename="images/25.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#"> Короткое свадебное платье со съёмным шлейфом</a></h3>
+  <p>Цена: 20 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for("static", filename="images/26.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#"> Пышное атласное свадебное платье с объёмными цветами</a>
+      </h3>
+      <p>Цена: 87 000 сом </p>
+    </div>
+  </a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for("static", filename="images/27.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#"> Свадебное платье миди с квадратным вырезом </a></h3>
+  <p>Цена: 31 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for("static", filename="images/28.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#"> Белое свадебное платье миди с объёмными рукавами</a></h3>
+  <p>Цена: 36 000 сом </p>
+</div>
+</a>
+</div>
+<div class="item">
+  <a href="#">
+    <img src="{{ url_for("static", filename="images/29.jpg") }}" alt="Платье 3">
+    <div class="info">
+      <h3> <a href="#">Брючной свадебный костюм белого цвета с топом </a></h3>
+  <p>Цена: 50 000 сом </p>
+</div>
+</a>
+</div>
+{% endblock %}
